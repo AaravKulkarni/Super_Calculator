@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Super Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <center>
+    <h1>Super Calculator</h1>
+        <br>
+        <h3> A Calculator For Every Need </h3>
+        <hr>
+        <br>
+        <div class="container">
+        <section id="Basic_Calculations">
+        <h3>Basic Calculations</h3>
+            <br>
+            <input id="number 1 basic cal" type="text" placeholder="Number 1" class="form-control">
+            <br>
+            <input id="number 2 basic cal" type="text" placeholder="Number 2" class="form-control">
+            <br>
+            <span>
+            <button class="btn btn-danger" onclick="Add()">Addition</button>
+                &nbsp;
+                <button class="btn btn-danger" onclick="Subtract()">Subtraction</button>
+                &nbsp;
+                <button class="btn btn-danger" onclick="Multiply()">Multiplication</button>
+                &nbsp;
+                <button class="btn btn-danger" onclick="Divide()">Division</button>
+            </span>
+            <br>
+            <h3 id="Basic cal ans"></h3>
+        </section>
+            <br>
+            <section id="Percentage">
+                <h3>Percentage Calculator</h3>
+                <input type="number" id="percent1" class="form-control" placeholder="Percentage"> 
+                <br> 
+                        <input type="number" id="num1" class="form-control" placeholder="Number"> 
+                    <br>
+                    <button class="btn btn-danger" onclick="Percentage1()">Calculate</button>
+                    <br>
+                    <h3 id="per 1 ans"></h3>
+                </section>
+                <br>
+                <section id="fraction & decimals">
+                    <h3>Fraction & Decimal Calculator</h3>
+                    <br>
+                    <input type="text" id="numerator" class="form-control" placeholder="Numerator">
+                    <br>
+                    <input type="text" id="denominator" class="form-control" placeholder="Denominator">
+                    <br>
+                    <button onclick="FracToDecim()" class="btn btn-danger">Fraction To Decimal</button>
+                    <br>
+                    <h3 id="fractodecimcalcans"></h3>
+                </section>
+                <br>
+                <section id="Exponents">
+                    <h3>Exponents Calculator</h3>
+                    <br>
+                    <input type="text" class="form-control" id="power" placeholder="Power">
+                    <br>
+                    <input type="text" class="form-control" id="numberforpower" placeholder="Number">
+                    <br>
+                    <button class="btn btn-danger" onclick="CalcPower()">Calculate Power</button>
+                    <br>
+                    <h3 id="pwernum"></h3>
+                </section>
+                <br>
+                <section id="RandomNumber">
+                    <h3>Random Number Generator</h3>
+                    <br>
+                    <input type="text" id="rannum1" class="form-control" placeholder="Starting Point">
+                    <br>
+                    <input type="text" id="rannum2" class="form-control" placeholder="Ending Point">
+                    <br>
+                    <button onclick="generaterandomnum()" class="btn btn-danger">Generate Random Number</button>
+                    <br>
+                    <h3 id="rannumans"></h3>
+                </section>
+                <br>
+                <section id="Weight On Planets">
+                    <h3>Weight On Planets</h3>
+                    <br>
+                    <input type="text" id="weightonearth" class="form-control" placeholder="Weight On Earth (in kg)">
+                    <br>
+                    <span>
+                        <button onclick="Mercury()" class="btn btn-danger">Mercury</button>
+                        &nbsp;
+                        <button onclick="Venus()" class="btn btn-danger">Venus</button>
+                        &nbsp;
+                        <button onclick="Mars()" class="btn btn-danger">Mars</button>
+                        &nbsp;
+                        <button onclick="Jupiter()" class="btn btn-danger">Jupiter</button>
+                        &nbsp;
+                        <button onclick="Saturn()" class="btn btn-danger">Saturn</button>
+                        &nbsp;
+                        <button onclick="Uranus()" class="btn btn-danger">Uranus</button>
+                        &nbsp;
+                        <button onclick="Neptune()" class="btn btn-danger">Neptune</button>
+                        &nbsp;
+                        <button onclick="Pluto()" class="btn btn-danger">Pluto</button>
+                    </span>
+                    <br>
+                    <h3 id="clacweight"></h3>
+                </section>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+    <script src="calculator.js"></script>
+</body>
+</html>
