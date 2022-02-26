@@ -87,3 +87,24 @@ function Pluto(){
     Calcweight = WeightOnEarth * 0.06;
     document.getElementById("clacweight").innerHTML = "Weight on Pluto is " + Calcweight + "kg"
 }
+function RATE(){
+    SImple = document.getElementById("si").value;
+    P = document.getElementById("p").value;
+    T = document.getElementById('t').value;
+    CalculatedRate = 100 * SImple / P * T;
+    document.getElementById("calculatedsirtp").innerHTML = "Rate Of Interset = " + CalculatedRate + " p.a";
+}
+function TIME(){
+    SImple = document.getElementById("si").value;
+    P = document.getElementById("p").value;
+    R = document.getElementById('r').value;
+    CalculatedTimee = 100 * SImple / P * R;
+    document.getElementById("calculatedsirtp").innerHTML = "Time = " + CalculatedTimee + " years";
+}
+function SI(){
+    T = document.getElementById('t').value;
+    P = document.getElementById("p").value;
+    R = document.getElementById('r').value;
+    CalculatedTimee = P * T * R / 100;
+    document.getElementById("calculatedsirtp").innerHTML = "Simple Interest = " + CalculatedTimee;
+}

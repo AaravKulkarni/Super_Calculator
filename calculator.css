@@ -21,3 +21,12 @@ section{
 input{
     text-align: center;
 }
+#area_select{
+    text-align: center;
+}
+h4{
+    font-weight: 200;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
